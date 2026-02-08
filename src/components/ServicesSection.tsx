@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { useEffect, useRef } from "react";
 
 const services = [
@@ -99,9 +100,11 @@ export default function ServicesSection() {
                         style={{ display: 'block', width: '100%', height: '100%', objectFit: 'cover' }}
                       />
                     ) : (
-                      <img
+                      <Image
                         src={s.image}
                         alt={s.title}
+                        fill
+                        sizes="(max-width: 767px) 100vw, 900px"
                         className="w-full h-full object-cover transition-transform duration-[1600ms] ease-out group-hover:scale-[1.06]"
                         draggable={false}
                       />

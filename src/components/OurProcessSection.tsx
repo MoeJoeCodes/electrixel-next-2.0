@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import React, { useEffect } from "react";
 
 export default function OurProcessSection() {
@@ -66,7 +67,13 @@ export default function OurProcessSection() {
                 </p>
               </div>
               <div className="card-image-column">
-                <img src="/card-1.gif" alt="Animated illustration of team members collaborating during discovery phase." loading="lazy" />
+                <Image
+                  src="/card-1.gif"
+                  alt="Animated illustration of team members collaborating during discovery phase."
+                  width={680}
+                  height={493}
+                  className="h-auto w-full max-w-full"
+                />
               </div>
             </div>
           </li>
@@ -81,7 +88,13 @@ export default function OurProcessSection() {
                 </p>
               </div>
               <div className="card-image-column">
-                <img src="/card-2.gif" alt="Illustration representing strategic planning with charts and graphs." loading="lazy" />
+                <Image
+                  src="/card-2.gif"
+                  alt="Illustration representing strategic planning with charts and graphs."
+                  width={680}
+                  height={493}
+                  className="h-auto w-full max-w-full"
+                />
               </div>
             </div>
           </li>
@@ -96,7 +109,13 @@ export default function OurProcessSection() {
                 </p>
               </div>
               <div className="card-image-column">
-                <img src="/card-3.gif" alt="Illustration showing UI design mockups and coding." loading="lazy" />
+                <Image
+                  src="/card-3.gif"
+                  alt="Illustration showing UI design mockups and coding."
+                  width={680}
+                  height={493}
+                  className="h-auto w-full max-w-full"
+                />
               </div>
             </div>
           </li>
@@ -111,7 +130,13 @@ export default function OurProcessSection() {
                 </p>
               </div>
               <div className="card-image-column">
-                <img src="/card-4.gif" alt="Illustration depicting project launch with rocket and growth metrics." loading="lazy" />
+                <Image
+                  src="/card-4.gif"
+                  alt="Illustration depicting project launch with rocket and growth metrics."
+                  width={680}
+                  height={493}
+                  className="h-auto w-full max-w-full"
+                />
               </div>
             </div>
           </li>

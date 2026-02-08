@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import React, { useEffect, useMemo, useState } from "react";
 
 export default function OurWorkSection() {
@@ -128,7 +129,6 @@ export default function OurWorkSection() {
             }}
           >
             {loopedCards.map((card, i) => {
-              const isActive = i === index;
               return (
             <article
               key={`${card.title}-${i}`}
@@ -141,9 +141,11 @@ export default function OurWorkSection() {
               }}
               data-card
             >
-              <img
+              <Image
                 src={card.image}
                 alt={card.title}
+                fill
+                sizes="(max-width: 767px) 320px, 480px"
                 className="absolute inset-0 h-full w-full object-cover"
                 draggable={false}
               />
